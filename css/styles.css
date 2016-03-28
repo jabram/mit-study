@@ -1,0 +1,155 @@
+/***** RESET *****/
+/* http://meyerweb.com/eric/tools/css/reset/
+v2.0 | 20110126
+License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+
+sup {
+  font-size: 70%;
+  position: relative;
+  top: -7px;
+}
+
+.clear {
+  clear: both;
+  width: 0;
+  height: 0;
+  line-height: 0;
+}
+
+.bold, strong {
+  font-weight: bold;
+}
+
+.italic, em {
+  font-style: italic;
+}
+
+
+
+/** for reals **/
+body {
+  padding: 0 1em;  
+}
+
+h1 {
+  font-size: 3em;
+  font-weight: bold;
+  margin: 1em 0;
+}
+
+.letter {
+  border-top: 2px solid #888;
+}
+
+  input[type="radio"] {
+    display: none;
+  }
+
+  label {
+    display: block;
+    padding: .5em;
+    cursor: pointer;
+  }
+
+  label:hover {
+    background: #eee;
+  }
+
+  input:checked + label:hover {
+    background: transparent;
+    cursor: default;
+  }
+
+  .contacts {
+    display: none;
+    padding: 0 0 1em 3em;
+  }
+
+  input:checked ~ .contacts {
+    display: block;
+  }
+
+    dl.contact {
+      margin-bottom: 1em;
+      padding: 1em 0.5em 0 8.5em;
+      border-top: 1px solid #ccc;
+      position: relative;
+      -moz-columns: 2;
+      -webkit-columns: 2;
+      columns: 2;
+    }
+
+      dt {
+        font-size: .8em;
+        font-style: italic;
+      }
+
+      dd {
+        margin-bottom: .5em;
+      }
+
+      dd.image {
+        position: absolute;
+        top: 1em;
+        left: 0.5em;
+        width: 7em;
+        margin-right: .5em;
+      }
+
+        dd.image img {
+          display: block;
+          width: 100%;
+          height: auto;
+        }
+
+      dd.name {
+        font-size: 1.5em;
+        font-weight: bold;
+      }
+
+      dd.social {
+        display: inline-block;
+        margin-right: 5px;
+      }
+
+        dd.social .fa {
+          font-size: 1.2em;
+        }
+
+        .fa-facebook-square {
+          color: #3b5998;
+        }
+
+        .fa-twitter-square {
+          color: #4099ff;
+        }
+
+        .fa-linkedin-square {
+          color: #0e76a8;
+        }
