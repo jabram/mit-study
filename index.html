@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>It's A Contact List!</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="http://leaverou.github.io/wysie/wysie.css">
     <link rel="stylesheet" type="text/css" href="css/styles.css">
   </head>
   <body>
@@ -37,21 +38,21 @@
     <div class="letter">
       <input type="radio" id="D-names" name="selected-letter" checked="checked" />
       <label for="D-names">D</label>
-      <div class="contacts">
-        <dl class="contact">
+      <div class="contacts autoedit" data-store>
+        <dl class="contact" property="contact" data-multiple>
           <dd class="image"><img src="images/drumpf.jpg" /></dd>
 
           <dt>name:</dt>
-          <dd class="name">Donald Drumpf</dd>
+          <dd property class="name">Donald Drumpf</dd>
 
           <dt>company:</dt>
-          <dd>Drumpf Inc</dd>
+          <dd property="company">Drumpf Inc</dd>
 
           <dt>phone:</dt>
-          <dd>123-456-7890</dd>
+          <dd property="phone" data-multiple>123-456-7890 <span property="type">home</span></dd>
 
           <dt>address:</dt>
-          <dd>123 Main St.<br />Anytown, USA</dd>
+          <dd property="address">123 Main St.<br />Anytown, USA</dd>
 
           <dt>email:</dt>
           <dd><a href="mailto:youre-all-losers@drumpf.com">youre-all-losers@drumpf.com</a></dd>
@@ -60,9 +61,9 @@
           <dd><a href="http://www.drumpf.com">drumpf.com</a></dd>
 
           <dt>social:</dt>
-          <dd class="social"><a href="http://www.facebook.com/drumpf"><i class="fa fa-facebook-square"></i></a></dd>
-          <dd class="social"><a href="http://www.twitter.com/drumpf"><i class="fa fa-twitter-square"></i></a></dd>
-          <dd class="social"><a href="http://www.linkedin.com/drumpf"><i class="fa fa-linkedin-square"></i></a></dd>
+          <dd style="=iff(facebook, '', 'opacity: .5; color: #ccc;')" class="social"><a disabled="=iff(facebook, 'false', 'true')" property="facebook" href="http://www.facebook.com/drumpf"><i class="fa fa-facebook-square"></i></a></dd>
+          <dd class="social"><a property="twitter" href="http://www.twitter.com/drumpf"><i class="fa fa-twitter-square"></i></a></dd>
+          <dd class="social"><a property="linkedin" href="http://www.linkedin.com/drumpf"><i class="fa fa-linkedin-square"></i></a></dd>
 
           <dt class="notes">notes:</dt>
           <dd>this guy is a giant loser</dd>
@@ -245,6 +246,9 @@
         <p>There are no contacts that begin with Z.</p>
       </div>
     </div>
+
+
+    <script type="text/javascript" src="http://leaverou.github.io/wysie/wysie.js"></script>
 
   </body>
 </html>
